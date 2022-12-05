@@ -1,5 +1,4 @@
-# awesome-book
-This repository is for the activity Module 2 week1 "Awesome books: plain JavaScript with objects".
+# Awesome-book
 <a name="readme-top"></a>
 
 <!--
