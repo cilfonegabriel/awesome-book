@@ -1,5 +1,5 @@
 function getTasks() {
-  const tasks = JSON.parse(localStorage.getItem('tasks'));
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const tasksView = document.getElementById('tasks');
   tasksView.innerHTML = '';
   for (let i = 0; i < tasks.length; i += 1) {
@@ -42,7 +42,7 @@ function saveTask(e) {
 }
 
 function deleteTask(title) {
-  const tasks = JSON.parse(localStorage.getItem('tasks'));
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   for (let i = 0; i < tasks.length; i += 1) {
     if (tasks[i].title === title) {
       tasks.splice(i, 1);
